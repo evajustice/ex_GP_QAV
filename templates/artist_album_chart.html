@@ -1,0 +1,28 @@
+<html>
+<head>
+    <title>Artist Album Chart</title>
+    <link rel="stylesheet" type = "text/css" href="/static/ProjectcssFile.css"/>
+</head>
+<body>
+    <header>
+    <img src="/static/EssentialsManagement.png" title="company logo" class="nonhomelogo"/>
+    <h1 class="headerbar">Artist Album Chart</h1>
+    </header>
+
+    <form method="POST">
+        <button type="submit" class="generatechart">Generate Chart</button>
+    </form>
+	
+	{% if chart_image %}
+        <img src="{{ chart_image }}" alt="Artist Album Chart" width="1400" height="800" class= "centerchart">
+    {% else %}
+        <h2>As a company, we are dedicated to success for our artists. This includes top-tier album production. Our artists are well-managed and gain accolades
+            for their music. It is our job to market, manage, and sell our clients. Our artists are all successful in their
+            own right. We manage their lives once their life-changing albums are made. Click to see our current artist and how many albums they have. This is who we represent.
+        </h2>
+    {% endif %}
+        <br/><br/><br/>
+    <a href="{{ url_for('home') }}" class="submitbutton"> Return to Home</a>
+
+</body>
+</html>

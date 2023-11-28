@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <title>
+            Signing a New Artist
+        </title>
+        <link rel="stylesheet" type = "text/css" href="/static/ProjectcssFile.css"/>
+    </head>
+    <body>
+        <header>
+            <img src="/static/EssentialsManagement.png" title="logo" class="nonhomelogo"/>
+            <h1 class='headerbar'> Add New Artist to Database</h1>
+        </header>
+        
+        <img src="/static/add_artist.png" title="add_artist" class="add_artist_image"/>
+        <h2> * Note: All contracts MUST be COMPLETED before filling this out. </h2>
+        <form method = "POST">
+        <div class="form-group">
+            <label class = 'formlabel'>Artist First Name: </label>
+            <input type="text" name="artist_first_name"><br><br>
+        </div>
+        <div class="form-group">
+             <label class = 'formlabel'>Artist Last Name: </label>
+            <input type="text" name="artist_last_name"><br><br>
+        </div>
+        <div class="form-group">
+            <label class = 'formlabel'>Artist Date of Birth (yyyy-mm-dd): </label>
+            <input type="text" name="artist_dob"><br><br>
+        </div>
+        <div class="form-group">
+            <label class = 'formlabel'>Number of Albums: </label>
+            <input type="text" name="number_of_albums"><br><br>
+        </div>
+        <div class="form-group">
+            <label class = 'formlabel'>Number of Grammys Won: </label>
+            <input type="text" name="number_of_grammys_won"><br><br>
+        </div>
+        <div class="form-group">
+            <label class = 'formlabel'>Monthly Spotify Listeners (Millions): </label>
+            <input type="text" name="monthly_spotify_listeners_M"><br><br>
+        </div>
+        <div class="form-group">
+            <label class = 'formlabel' >Self-identified Genre: </label>
+            <select class = 'select' name = "genre_name" size = "3"> 
+                <option value = "Pop"> Pop </option>
+                <option value = "R&B">R&B</option>
+                <option value = "Hip-Hop">Hip-Hop</option>
+                <option value = "Indie Pop">Indie Pop</option> 
+                <option value = "Pop Rock">Pop Rock</option>
+                <option value = "Rap">Rap</option>
+                <option value = "Blues">Blues</option>
+                <option value = "Folk">Folk</option>
+                <option value = "Latin">Latin</option>
+                <option value = "Reggaeton">Reggaeton</option>
+                <option value = "Indie Rock">Indie Rock</option>
+                <option value = "Soul">Soul</option>
+            </select>
+            <br/><br/>
+        </div>
+        <div class="form-group">
+        <label class = 'formlabel'>Enter Notes About the Artist (if applicable): </label><br>
+		<textarea name = "notes" rows = "8" cols = "25" class = >Notes (i.e. requests, collaborations, manager information, etc. Remove this text if not notes.)</textarea>
+        </div>
+        <br/><br/>
+        {% if message %}
+        <h2>{{ message }}</h2>
+        {% endif %}
+        <br/><br/>
+        <input type = "submit" class="submitbutton" value="Add New Artist">
+        <input type="reset" name="clear" class='submitbutton' value = "Clear All">
+    </form>
+
+    <a href="{{ url_for('home') }}" class = 'submitbutton'> Return to Home</a>
+    </body>
+</html>

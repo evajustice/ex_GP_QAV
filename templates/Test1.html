@@ -1,0 +1,45 @@
+<!--<html>
+
+<head>
+    <title>Essentials Management Co: Representation</title>
+</head>
+
+<body>
+    <h1>Search Artist Represented by Essentials Management Co.</h1>
+    <form method="POST" action='get_artist'>
+        <label>Artist First Name:</label>
+        <input type="text" name="artist_first_name">
+    </br>
+    </br>
+
+        <label>Artist Last Name:</label>
+        <input type="text" name="artist_last_name">
+    </br>
+    </br>
+        <input type="submit" value="Search">
+    </form>
+
+    {% if artist_info is defined %}
+    <h2>Artist Details</h2>
+    {{ artist_info | safe }}
+    <!-- <ul>
+        {% for artist_id in artist_info %}
+            <li>
+                <strong>Artist ID:</strong> {{ artist_info['artist_id'][0]}} |
+                <strong>Artist First Name:</strong> {{ artist_info['artist_first_name'][0] }} |
+                <strong>Artist Last Name:</strong> {{ artist_info['artist_last_name'][0] }} |
+                <strong>Artist DOB:</strong> {{ artist_info['artist_dob'][0] }} |
+                <strong>Number of Albums:</strong> {{ artist_info['number_of_albums'][0] }} |
+                <strong>Number of Grammys:</strong> {{ artist_info['number_of_grammys_won'][0] }} |
+                <strong>Millions of Spotify Listeners Per Month:</strong> {{ artist_info['monthly_spotify_listeners_M'][0]}}
+            </li>
+        {% endfor %}
+    </ul>
+    {% endif %} 
+    
+    {% if message %}
+    <h2>{{ message }}</h2>
+    {% endif %}
+</body> -->
+
+</html>

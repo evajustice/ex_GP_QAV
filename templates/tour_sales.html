@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fanbase Information</title>
+    <link rel="stylesheet" type = "text/css" href="/static/ProjectcssFile.css"/>
+  </head>
+    <header>
+    <img src="/static/EssentialsManagement.png" title="company logo" class="nonhomelogo"/>
+    <h1 class='headerbar'>Tour Sales Information</h1>
+    </header>
+    <form method="POST" action='tour_sales'>
+      <table>
+          <tr>
+              <td>
+                  <label class='formlabel'>Artist First Name:</label>
+              </td>
+              <td colspan="2">
+                  <input type="text" style="width: 300px;" name="artist_first_name">
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <label class='formlabel'>Artist Last Name:</label>
+              </td>
+              <td colspan="2">
+                  <input type="text" style="width: 300px;" name="artist_last_name">
+              </td>
+          </tr>
+      </table>
+      <br><br>
+      <input type="submit" class="submitbutton" value="Search">
+  </form>
+    {% if fan_info is defined %}
+    <div class = 'tablelabeltoursales'>
+    <h2>Tour Sales Details</h2>
+    </div>
+    <div class ='infotable'>
+	  {{ fan_info | safe }}
+  </br></br>
+    {{total_sales | safe}}
+    {% endif %}
+    </div>
+    {% if message %}
+    <h2>{{ message }}</h2>
+    {% endif %}
+    <br/>
+    <br/>
+    <a href="{{ url_for('home') }}" class="submitbutton" > Return to Home</a>
+  </body>
+</html>

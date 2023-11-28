@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title> Artist and Their Grammys Chart</title>
+    <link rel="stylesheet" type = "text/css" href="/static/ProjectcssFile.css"/>
+</head>
+<body>
+    <header>
+    <img src="/static/EssentialsManagement.png" title="company logo" class="nonhomelogo"/>
+    <h1 class="headerbar">Create Artist and Their Grammys Chart</h1>
+    </header>   
+
+    <form method="POST" action="/artist_grammys">
+        <button type="submit" class="generatechart">Generate Chart</button>
+    </form>
+	
+	{% if chart_image1 %}
+        <img src="{{ chart_image1 }}" alt="Artist and Their Grammys Chart" class="centerchart">
+    {% else %}
+        <h2> Check out who has Grammys in Essentials Management and what portion they take up of the total Grammy wins among our artists</h2>
+    {% endif %}
+    <br/><br/><br/>
+    <a href="{{ url_for('home') }}" class="submitbutton"> Return to Home</a>
+</body>
+</html>

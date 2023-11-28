@@ -1,0 +1,184 @@
+/*create CSS file*/
+	/*define background colors*/
+	body {background-color: #c4ecff}
+	/*define CSS headers*/
+	h1 {color: rgb(77, 140, 248); text-align: center; font-size: 40px}
+	h2 {color: #4848f0; text-align: left; margin: 5px}
+	body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        background-color: #ffffff; /* White background color for the top bar */
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: Box shadow for a subtle border */
+    }
+
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between; /* Distribute the links evenly */
+    }
+    
+    nav a {
+        text-decoration: none;
+        color: #333333; /* Link color */
+        font-weight: bold;
+    }
+
+    /* Style inputs with type="text", select elements and textareas */
+    input[type=text], select, textarea {
+    width: 25%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+    /* define classes */
+    .hometable td {
+        width: 1000px; text-align: center; border: 1px solid #c4ecff; padding: 3px;}
+
+    .large-button {
+        width: 250px;
+        height: 50px;
+        }
+    .top-bar {
+        max-width: 1500px; /* Adjust the max-width as needed */
+        margin: 0 auto; /* Center the top bar on the page */
+        padding: 15px; /* Adjust the padding as needed */
+        }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 460px;
+        height:170px;
+    }
+    .nonhomelogo{
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+    }
+
+    .meme{
+        position: relative;
+        top: 5%;
+        left: 30%;
+        width: 1200px;
+        height: 700px;
+    }
+    .submitbutton {
+        background-color: #0481aa;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        font-size: 20px;
+      }
+    
+    .headerbar {
+        background-color: #ffffff;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+      }
+
+    .select {
+        position:relative;
+        left: 2%;
+    }
+    .formlabel {
+        margin-left: 10px;
+        color: #1d7e9f;
+        background-color: #ffffff ;
+        font-size: 20px}
+
+    .form-group {
+        margin-bottom: 10px; /*margin-bottom value as needed to form input and label*/
+        }
+    
+    .tablelabelartist{
+        margin-left: 270px;
+    }
+
+    .tablelabeltoursales{
+        margin-left:310px;
+    }
+
+    .tablelabelgettour{
+        margin-left:70px;
+    }
+
+    .tablelabeldiscography{
+        margin-left:160px;
+    }
+
+    .infotable tr, 
+    .infotable td{
+            border: 1px solid;
+            border-color: #113b7b;
+            background-color: #ffffff;
+            text-align: center;
+            color: #000000;
+            width: 100px;
+            padding: 10px
+          }
+    .infotable th {
+        text-align: center;
+    }
+
+    .generatechart {
+        background-color: #0481aa;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 30%;
+        opacity: 0.9;
+        font-size: 20px;
+        position: relative;
+        top: 30%;
+        left: 35%;
+    }
+
+    .centerchart{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .checkboxsize{
+        width: 20px;
+        height: 20px;
+    }
+
+    .discography_image{
+        position:absolute;
+        top:270px;
+        right:70px;
+        width: 550px;
+        height: 370px;
+    }
+
+    .add_artist_image{
+        position:absolute;
+        top:290px;
+        right:70px;
+        width: 700px;
+        height: 500px;
+    }
+
+

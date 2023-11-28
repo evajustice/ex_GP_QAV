@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type = "text/css" href="/static/ProjectcssFile.css"/>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+        <img src="/static/EssentialsManagement.png" title="company logo" class="logo"/>
+        <h1>Essentials Co. Artist Management</h1>
+        <nav>
+            <table class="hometable"> 
+                <tr>
+                    <td><a href="{{ url_for('get_artist') }}">Search Artist</a></td>
+                    <td><a href="{{ url_for('tour_sales') }}">Search Fanbase</a></td>
+                    <td><a href="{{ url_for('add_new_artist') }}">Add Newly Signed Artist</a></td>
+                    <td><a href="{{ url_for('get_tour') }}">Search for Tours</a></td>
+                    <td><a href="{{ url_for('get_discography') }}">Get Artist and Discography</a></td>
+                    <td><a href="{{ url_for('add_single') }}">Add Single</a></td>
+                    <td><a href="{{ url_for('artist_album_chart') }}">Artist and Number of Albums Chart</a></td>
+                    <td><a href="{{ url_for('artist_grammys') }}">Get Artist and Grammys Chart</a></td>
+                </tr>
+            </table>
+        </nav>
+    </div>
+    </header>
+    <img src="/static/musicmanagementmeme.png" title="management meme" class="meme"/>
+</body>
+</html>

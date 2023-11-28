@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tour Information</title>
+    <link rel="stylesheet" type = "text/css" href="/static/ProjectcssFile.css"/>
+  </head>
+  <body>
+    <header>
+    <img src="/static/EssentialsManagement.png" title="company logo" class="nonhomelogo"/>
+    <h1 class='headerbar'>Tour Information</h1>
+    </header>
+    <form method="POST" action='get_tour'>
+      <div class="form-group"></div>
+        <label class = 'formlabel'>Headliner First Name:</label>
+        <input type="text" name="artist_first_name">
+    </div>
+    </br>
+    </br>
+      <div class="form-group">
+        <label class = 'formlabel'>Headliner Last Name:</label>
+        <input type="text" name="artist_last_name">
+      </div>
+    </br>
+    </br>
+        <input type="submit" class="submitbutton" value="Search">
+    </form>
+        {% if tour_info is defined %}
+        <h2 class ='tablelabelgettour'>Tour Details</h2>
+      <div class= 'infotable'>
+	    {{ tour_info | safe }}
+        {% endif %}
+      </div>
+    {% if message %}
+    <h2>{{ message }}</h2>
+    {% endif %}
+    <br/>
+    <br/>
+    <a href="{{ url_for('home') }}" class="submitbutton"> Return to Home</a>
+  </body>
+</html>
+
