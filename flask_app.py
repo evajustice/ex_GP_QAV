@@ -12,8 +12,6 @@ import os
 
 PARENT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-
-
 app = Flask(__name__)
 
 @app.route('/')
